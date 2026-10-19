@@ -1,0 +1,18 @@
+{
+  "name": "elhabchi-traiteur-app",
+  "version": "1.0.0",
+  "description": "Application web MERN de présentation, réservation et gestion pour Elhabchi Traiteur",
+  "private": true,
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "node dev.js",
+    "build": "npm run build --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed --prefix server",
+    "test:server": "node server/test/test-scenarios.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

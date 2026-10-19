@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-zellige: 15 92 77;
+    --color-safran: 184 146 58;
+  }
+
+  body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  [dir="rtl"] {
+    font-family: 'Cairo', 'Amiri', system-ui, sans-serif;
+  }
+}
+
+/* Subtle Moroccan geometric background pattern */
+.bg-moroccan-pattern {
+  background-image: radial-gradient(#B8923A 0.75px, transparent 0.75px), radial-gradient(#0F5C4D 0.75px, #FBF5E6 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.dark .bg-moroccan-pattern {
+  background-image: radial-gradient(#D9B65C 0.6px, transparent 0.6px), radial-gradient(#2FA48E 0.6px, #14110E 0.6px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8923A66;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8923A;
+}
+
+/* Print optimizations for PDF/browser */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
