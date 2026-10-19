@@ -58,11 +58,11 @@ NODE_ENV=development
 PORT=5000
 CLIENT_URL=http://localhost:5173
 MONGO_URI=mongodb://127.0.0.1:27017/elhabchi_traiteur
-JWT_ACCESS_SECRET=elhabchi_traiteur_jwt_access_secret_super_secure_key_2026
-JWT_REFRESH_SECRET=elhabchi_traiteur_jwt_refresh_secret_super_secure_key_2026
-JWT_ACCESS_EXPIRES=15m
-JWT_REFRESH_EXPIRES=7d
-WHATSAPP_NUMBER=212705782737
+JWT_ACCESS_SECRET=secret
+JWT_REFRESH_SECRET=secret
+JWT_ACCESS_EXPIRES=secret
+JWT_REFRESH_EXPIRES=secret
+WHATSAPP_NUMBER=2126404404
 ```
 
 ### 3. Initialisation de la base de données (Seed)
@@ -73,9 +73,6 @@ Remplir la base avec les plats gastronomiques, formules de prestige, stock de ma
 npm run seed
 ```
 
-Identifiants préconfigurés :
-- **Admin** : `admin@elhabchitraiteur.ma` / `Admin1234!`
-- **Staff** : `staff@elhabchitraiteur.ma` / `Staff1234!`
 
 ### 4. Lancement de l'application
 
@@ -84,9 +81,6 @@ Identifiants préconfigurés :
 npm run dev
 ```
 
-- **Site Vitrine & Simulateur** : [http://localhost:5173](http://localhost:5173)
-- **Espace Administrateur** : [http://localhost:5173/admin/login](http://localhost:5173/admin/login)
-- **API RESTful** : [http://localhost:5000/api/v1](http://localhost:5000/api/v1)
 
 ### 5. Exécution des tests de recette
 
