@@ -1,3 +1,6 @@
+## License
+   © 2026 Elhabchi Mohammed. All Rights Reserved.
+
 # Elhabchi Traiteur — Application Web MERN d'Exception
 
 > Application web MERN de présentation, réservation en ligne et gestion logistique pour un traiteur marocain haut de gamme, conforme aux 32 pages du **Cahier des Charges Elhabchi Traiteur v1.0**.
